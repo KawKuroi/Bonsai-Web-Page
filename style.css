@@ -43,7 +43,7 @@ header{
     font-weight: 700;
 }
 
-/* MODIFICACIÓN EN LA POSICIÓN DEL ICONO JUNTO A LA LETRA DEL MISMO */
+/* Modificación en la posición del icono junto a la letra del mismo */
 
 .nav > div {
     display: flex;
@@ -83,7 +83,9 @@ header{
     width: 100%;
     background-image: url(img/Background__Bonsai.jpg);
     height: 650px;
-/* MODIFICAR LOS VALORES DEL FONDO*/
+
+/* esto sirve para cambiar los valores/propiedades de los fondos/background con imágenes */
+
     background-repeat: no-repeat;
     background-position: 50% 40%;
     background-size: cover;
@@ -99,7 +101,7 @@ header{
     box-shadow: 3px 3px 8px #00000070;
 
 }
-/* APARENTEMENTE, LOS TEXTOS GENERAN SU PROPIO BACKGROUND, POR TANTO HAY QUE RETIRARLO */
+/* Aparentemente, los textos generan su propio background, por tanto los retiré */
 
 .title,.box__text__content, .text__color, .box__text > a {
     background: none;
@@ -141,3 +143,71 @@ header{
 }
 
 /* COMIENZO DE LA SEGUNDA SECCIÓN DE LA PÁGINA */
+
+.article__box{
+    width: 77%;
+    height: 700px;
+    margin: 15px auto; 
+    display: flex;
+    justify-content: space-around;
+    
+}
+.article__img{
+    object-fit: contain;
+    padding: 30px 0px;
+}
+
+.box__text__article{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 60px;
+    padding: 0;
+    
+}
+
+ /* Termino la edición general de las cajas y empieza la individual (al parecer se guardaron condiciones aplicadas anteriormente y por tanto toco reiniciar los estilos) */
+
+.box__text__article > h3 {
+    font-size: 22px;
+    text-align: center;
+    padding: 0;
+}
+.subtitle {
+    padding: 0;
+    color: var(--Green01);
+    font-size: 36px;
+}
+.box__text__article > h3 {
+    font-size: 19px;
+    text-align: justify;
+    padding: 40px 0;
+}
+
+
+.box__text__article > div {
+    display: flex;
+}
+
+.box__text__article > div > a {
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 19px;
+    text-align: center;
+    padding: 0;
+    color: var(--Green03);
+}
+
+.box__text__article > div > img{
+    justify-items: center;
+    width: 25px;
+}
+
+.box__text__article > div > a:hover {
+    color: var(--Green01);
+    border-bottom: 2px solid var(--Green-01);
+}
+
+/* COMIENZA LA TERCERA SECCIÓN DE LA PÁGINA */
