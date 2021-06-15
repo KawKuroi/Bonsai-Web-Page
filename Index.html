@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-ES">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +15,11 @@
 
     <header class="header">
         <nav class="nav">
-            <a href="#" class="nav__item logo"><img src="img/Icon.png" class="icon">Bonsai</a>
+            <!-- IMPORTANTE!, HAY QUE AGREGAR UN DIV PARA EL ICONO, ESTO AYUDA A PODER SEPARARLO LUEGO  -->
+            <div>
+                <img src="img/Icon.png" class="icono"><h1>Bonsai</h1>
+            </div>           
+            
             <a href="#" class="nav__item">Inicio</a>
             <a href="#" class="nav__item">Historia</a>
             <a href="#" class="nav__item">Cuidados</a>
@@ -27,31 +31,32 @@
 
 <body>
     <main class="main">
-        <div class="box__section main__box"></div>
+        <div class="box__section main__box">
             <div class="box__text maintext__box">
                 <h1 class="box__text__title title">¿Quieres tener un <span class="text__color">Bonsai</span>, pero no sabes que necesitas para realizar esta linda tarea?</h1>
                 <h3 class="box__text__content">¡Puedes aprender justo aqui!, tenemos mucha informacion que te puede ser util para mantener esta labor y llevarla a cabo de una forma precisa, con ciertos tips para el mejor cuidado posible</h3>
-                    <a href="#">más información</a>
+                    <a href="#">Más información</a>
             </div>
         </div>
     </main>
 
 <!-- CREACIÓN DE LA PRIMERA SECCIÓN DE LA PÁGINA -->
 
-    <article class="article main__article">
-        <div class="box__section">
-            <img src="img/Article Bonsai01.jpg">            
-                <div class="box__text article__box">
+    <article class="article article__article">
+        <div class="article__box">
+            <img src="img/Article__Bonsai__01.jpg" class="article__img">            
+                <div class="box__text__article">
                     <h2 class="box__text__content subtitle">¿Que son los bonsai?</h2>
-                    <h3 class="box__text__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst risus, sem egestas odio cras adipiscing vulputate. Nisi, risus in suscipit non. Non commodo volutpat, pharetra, vel.</h3>
-                        <a href="#">Conoce más</a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAmklEQVRIS+2V0Q3CMAxEXzYrm8BmHQE2gU3KBK1OMhLQNiauLPrR+47uxZdLUkhWSfbnALgJ7zKiHji7W7cFkQlG4ApcgMEDRQHyvQMnD7IFIIgmEESwRW0FvCCKS7HNVAMo6xYJogJ86K+Atd1/T/a02jZH9AtA5l3WIT/MvHoXoi26WSwpFy39qWip7vHh+GlFWuS7vq1IB0yY7R4Z4/sYuAAAAABJRU5ErkJggg=="/>
-            </div>           
+                    <h3 class="box__text__content">Bonsái (盆栽 bonsái?) es una palabra de origen japonés que significa literalmente bon = "bandeja" + sai = "cultivar" (aunque etimológicamente procede del término chino 盆栽, penzai, que significa pén = "cuenco" + zāi = "planta") y consiste en el arte de cultivar árboles y plantas, normalmente arbustos, controlando su tamaño para que permanezca de un tamaño muy inferior al natural, mediante técnicas, como el trasplante, la poda, el alambrado, el pinzado, etc., y modelando su forma para crear un estilo que nos recuerde una escena de la naturaleza. Es indisociable de la maceta, ya que el bonsái se entiende como el conjunto que conforman árbol y maceta.</h3>
+                    <div> <a href="#">Conoce más</a><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAmklEQVRIS+2V0Q3CMAxEXzYrm8BmHQE2gU3KBK1OMhLQNiauLPrR+47uxZdLUkhWSfbnALgJ7zKiHji7W7cFkQlG4ApcgMEDRQHyvQMnD7IFIIgmEESwRW0FvCCKS7HNVAMo6xYJogJ86K+Atd1/T/a02jZH9AtA5l3WIT/MvHoXoi26WSwpFy39qWip7vHh+GlFWuS7vq1IB0yY7R4Z4/sYuAAAAABJRU5ErkJggg=="/></div>
+                       
+                </div>           
         </div>
     </article>
 
 <!-- CREACIÓN DE LA LISTA O SEGUNDA SECCIÓN DE LA PÁGINA -->
 
-    <article class="article article__article">
+    <article class="article article__article__02">
         <div class="box__section">
             <h2 class="box__text__content subtitle">Tips para tener en cuenta en su cuidado!</h2>
                 <ul class="box__list">
