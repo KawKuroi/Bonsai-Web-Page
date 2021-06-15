@@ -6,5 +6,138 @@
     padding: 0;
     font-family: 'inter', sans-serif;
     font-size: 16px;   
-    background-color: #fff; 
+    background-color: #fff;
+   
 }
+
+:root{
+    --Green-01: #4febd3;
+    --Green01: #00917C;
+    --Green02: #064138;
+    --Green03: #02221D;
+    --Black: #000000;
+
+}
+
+/* INICIO DE MODELACIÓN DEL NAV DE LA PÁGINA WEB */
+
+header{
+    width: 90%;
+    margin: 5px auto;
+
+}
+
+.nav{
+    width: 100%;  
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+    
+}
+
+.nav__item{    
+    text-decoration: none;
+    padding: 0px 20px;
+    font-size: 32px;
+    color: var(--Green01);
+    font-weight: 700;
+}
+
+/* MODIFICACIÓN EN LA POSICIÓN DEL ICONO JUNTO A LA LETRA DEL MISMO */
+
+.nav > div {
+    display: flex;
+    align-items: center;
+    flex-grow: 4;
+ }
+
+.icono{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: var(--Green01);
+    padding: 5px;
+       
+}
+
+ .nav > div > h1{
+    padding: 0px 10px;
+    font-size: 72px;
+ }
+
+ .nav__item:hover, .nav__item:focus{
+    color: var(--Green-01);
+    border-bottom: 1px solid #4febd3;
+    transition: all 0.3s; 
+    transform:scale(1.05)
+ }
+
+ /* COMIENZO EN LA EDICIÓN DEL PRIMER ÁRTICULO DE LA PÁGINA */
+
+ body{
+    width: 90%;
+    margin: 0 auto;
+ }
+
+ .main__box{
+    width: 100%;
+    background-image: url(img/Background__Bonsai.jpg);
+    height: 650px;
+/* MODIFICAR LOS VALORES DEL FONDO*/
+    background-repeat: no-repeat;
+    background-position: 50% 40%;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+ }
+
+.box__text{
+    margin: 29px ;
+    width: 60%;
+    height: 585px;
+    background-color: #00917bbd;
+    box-shadow: 3px 3px 8px #00000070;
+
+}
+/* APARENTEMENTE, LOS TEXTOS GENERAN SU PROPIO BACKGROUND, POR TANTO HAY QUE RETIRARLO */
+
+.title,.box__text__content, .text__color, .box__text > a {
+    background: none;
+    text-decoration: none;
+}
+
+.maintext__box > .title{
+    padding: 41px 251px 17px 44px;
+    font-size: 56px;
+    
+}
+
+.maintext__box > .title > .text__color {
+    font-size: 55px;
+    color: var(--Green03);
+}
+
+.box__text__content {
+    padding: 0 153px 25px 44px;
+    font-size: 30px;
+    color: var(--Green03);
+
+}
+
+.box__text > a{
+    font-size: 26px;
+    margin: 0 44px;
+    font-weight: 600;
+    border-bottom: 1px solid #000000;
+    color: var(--Green03);
+    display: inline;
+}
+
+.box__text > a:hover {
+    color: #4febd3;
+    border-bottom: 1px solid#4febd3;
+    transition: all 0.3s; 
+    transform:scale(1.05)
+}
+
+/* COMIENZO DE LA SEGUNDA SECCIÓN DE LA PÁGINA */
