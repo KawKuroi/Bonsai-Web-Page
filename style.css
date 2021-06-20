@@ -211,3 +211,67 @@ header{
 }
 
 /* COMIENZA LA TERCERA SECCIÓN DE LA PÁGINA */
+
+.article__article__02 > .box__section{
+    background-color:var(--Green01);
+    height: auto;
+}
+
+.article__article__02 > .box__section > .box__text__content {
+    text-align: left ;
+    color: var(--Green03);
+    padding: 50px 8% 20px ;
+    font-size: 53px;
+    width: 600px;
+    font-weight: 800;
+    text-shadow: 2px 2px 1px rgba(0,0,0,.25);
+}
+
+.article__article__02 > .box__section > .box__list{
+    background: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    justify-content: space-around;
+    gap: 50px 100px;
+    padding: 0 10% 50px;
+
+}
+
+.article__article__02 > .box__section > .box__list > .box__box__list{
+    justify-self: center;
+    background-color:var(--Green01);
+    display: flex;   
+
+}
+
+.article__article__02 > .box__section > .box__list > .box__box__list > .box__box__list__img {
+    object-fit: contain;
+    align-self: start;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+.article__article__02 > .box__section > .box__list > .box__box__list > .box__box__list__text {
+    text-align: left;
+    padding: 0 10px;
+    background: none;
+    color: var(--Green03);
+}
+
+.article__article__02 > .box__section > .box__list > .box__box__list > .box__box__list__text > h3 {
+    font-size: 25px;
+    padding: 10px 0;
+    background: none;
+    font-weight: 800;
+}
+
+.article__article__02 > .box__section > .box__list > .box__box__list > .box__box__list__text > h4 {
+    font-size: 16px;
+    padding: 10px 0;
+    background: none;
+    font-weight: 400;
+}
+/*INICIO DEL FOOTER*/
