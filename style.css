@@ -74,13 +74,9 @@ header{
 
  /* COMIENZO EN LA EDICIÓN DEL PRIMER ÁRTICULO DE LA PÁGINA */
 
- body{
+ .main__box{
     width: 90%;
     margin: 0 auto;
- }
-
- .main__box{
-    width: 100%;
     background-image: url(img/Background__Bonsai.jpg);
     height: 650px;
 
@@ -109,7 +105,7 @@ header{
 }
 
 .maintext__box > .title{
-    padding: 41px 251px 17px 44px;
+    padding: 5% 25% 17px 4%;
     font-size: 56px;
     
 }
@@ -120,7 +116,7 @@ header{
 }
 
 .box__text__content {
-    padding: 0 153px 25px 44px;
+    padding: 0 15% 2% 4%;
     font-size: 30px;
     color: var(--Green03);
 
@@ -145,7 +141,7 @@ header{
 /* COMIENZO DE LA SEGUNDA SECCIÓN DE LA PÁGINA */
 
 .article__box{
-    width: 77%;
+    width: 67%;
     height: 700px;
     margin: 15px auto; 
     display: flex;
@@ -212,19 +208,11 @@ header{
 
 /* COMIENZA LA TERCERA SECCIÓN DE LA PÁGINA */
 
+/* Configuración de propiedades de cajas */
+
 .article__article__02 > .box__section{
     background-color:var(--Green01);
     height: auto;
-}
-
-.article__article__02 > .box__section > .box__text__content {
-    text-align: left ;
-    color: var(--Green03);
-    padding: 50px 8% 20px ;
-    font-size: 53px;
-    width: 600px;
-    font-weight: 800;
-    text-shadow: 2px 2px 1px rgba(0,0,0,.25);
 }
 
 .article__article__02 > .box__section > .box__list{
@@ -234,8 +222,7 @@ header{
     grid-template-rows: repeat(2, auto);
     justify-content: space-around;
     gap: 50px 100px;
-    padding: 0 10% 50px;
-
+    padding: 0 16% 50px;
 }
 
 .article__article__02 > .box__section > .box__list > .box__box__list{
@@ -243,6 +230,18 @@ header{
     background-color:var(--Green01);
     display: flex;   
 
+}
+
+/* Propiedades especificas dentro de los contenedores */
+
+.article__article__02 > .box__section > .box__text__content {
+    text-align: left ;
+    color: var(--Green03);
+    padding: 50px 8% 20px ;
+    font-size: 53px;
+    width: 600px;
+    font-weight: 800;
+    text-shadow: 2px 2px 1px rgba(0,0,0,.25);
 }
 
 .article__article__02 > .box__section > .box__list > .box__box__list > .box__box__list__img {
@@ -274,4 +273,57 @@ header{
     background: none;
     font-weight: 400;
 }
+
 /*INICIO DEL FOOTER*/
+
+.footer__box{    
+    background-color: var(--Green03);
+    display:grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__box > .footer__box__icon{
+    background: none;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+
+}
+
+.footer__box > .footer__box__icon > a {
+    background: none;
+}
+
+.footer__box > .footer__box__icon > a >.icono{
+    padding: 5px;
+    width: 60px;
+    height: auto;
+}
+
+.footer__box > .footer__box__icon > .subtitle{
+    background: none;
+    margin-left: 10px;
+}
+
+.footer__box > .footer__box__copy > .text__footer__copy{
+    background-color: var(--Green03);
+    color: var(--Green01);
+}
+
+.footer__box__iconsocial{
+    background: none;
+}
+
+.footer__box__iconsocial > a {
+    background: none;
+}
+
+.footer__box__iconsocial > a > img{
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0 10px;
+    background-color: var(--Green01);
+}

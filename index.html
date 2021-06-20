@@ -29,7 +29,7 @@
 
 <!-- CREACIÓN DE LA SECCIÓN MAIN Y EL BODY DE LA PÁGINA -->
 
-<body>
+<body class="body">
     <main class="main">
         <div class="box__section main__box">
             <div class="box__text maintext__box">
@@ -76,17 +76,32 @@
 <!-- FINAL DEL BODY E INICIO DEL FOOTER DE LA PÁGINA -->
 
 <footer class="footer">
-    <div class="icon__box">
-        <img src="img/Icon.png" class="icono icono__footer">
+    <div class="footer__box">
+
+        <div class="footer__box__icon">
+            <a href="#"><img src="img/Icon.png" class="icono icono__footer"></a>
             <h2 class="text__footer subtitle">Bonsai</h2>
-            <h3 class="text__footer__copy"><box-icon type='solid' name='copyright'></box-icon> 2021 Kuroi´s Bonsais. All rights reserved</h3>
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAlUlEQVRIS2NkoDFgpLH5DHS1wIGBgWE+AwODAoW+esDAwJDIwMBwAGQOsg9AEvIUGg7TDjJLEd2C/1QyHGYM2PHIPiDVAphekD5k9tCxgFCIUhxEZFtAad6AxSVOH4xaMBpEhFInwzAOog8MDAz8BAOAOAUPYfUKcqYCVTgLqFAngAxPwFbhEOc2ElVRWiwQtI7mFgAAwbElGSkYfAQAAAAASUVORK5CYII=" class="footer__icon__social"/>
+        </div>
 
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAlUlEQVRIS2NkoDFgpLH5DHS1wIGBgWE+AwODAoW+esDAwJDIwMBwAGQOsg9AEvIUGg7TDjJLEd2C/1QyHGYM2PHIPiDVAphekD5k9tCxgFCIUhxEZFtAad6AxSVOH4xaMBpEhFInwzAOog8MDAz8BAOAOAUPYfUKcqYCVTgLqFAngAxPwFbhEOc2ElVRWiwQtI7mFgAAwbElGSkYfAQAAAAASUVORK5CYII=" class="footer__icon__social"/>
+        <div class="footer__box__copy">
+            <h3 class="text__footer__copy">2021 Kuroi´s Bonsais. All rights reserved</h3>
+        </div>
+        
+        <div class="footer__box__iconsocial">
+            
+            <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABMklEQVRIS82V4TEEQRCFv4sAESACZEAGROBkIANEgAgIgQgQARkcEZAB9VX1qNktdTc9V3elf23tdPfr1/16ZsKKbbLi/KwdYApcA5sdzJ6BE+Crjh0z8HCjI3kJuQIu5wF8L5Hc0Bfg8N8BPAI7MZf3+Lbf+8DeiHGawVEM7W2USEBNUVxUZykAKz9eMBPVJqsijBTAGXDfMHR9TsMvBbAb1dnr19D4A2D/rfigatNdD0DZkQJQGAlga/yvKcunLMBHpRxjB9sZyQTxvwOfZQH0Pwduo0KH/VnNYwu4CQCvFtXUtWjKU5WM1WTlZReKZLsAGkQ0cEmpKJu8iYHt2E5kdhlVUfOiKT2v29b3oOxF2Y2FLUoUP3C1MEEUxdzruhfAOFnLXnn/2trf5GUY/Bn7Aw4tSRkCHCb+AAAAAElFTkSuQmCC"/></a>
+            
+            
 
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAlUlEQVRIS2NkoDFgpLH5DHS1wIGBgWE+AwODAoW+esDAwJDIwMBwAGQOsg9AEvIUGg7TDjJLEd2C/1QyHGYM2PHIPiDVAphekD5k9tCxgFCIUhxEZFtAad6AxSVOH4xaMBpEhFInwzAOog8MDAz8BAOAOAUPYfUKcqYCVTgLqFAngAxPwFbhEOc2ElVRWiwQtI7mFgAAwbElGSkYfAQAAAAASUVORK5CYII=" class="footer__icon__social"/>
+            <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABiElEQVRIS9WV7TEFQRBFz4sAGcgAESACRIAIEAEiQASIABEgAkSADIiAOmpnq7fNe7N/XilTtbW7sz33dt/+2AlzXpM54/NnBNvALuDdddtdy937A/A4JvpaBCfA8YjDH8AVcAr4XF2ZQI9vRoBHkzdgB3iuncsESrE1hUBJBFntroVgZwSbNZJM8FUBvwYOKzK4dxbsJV/L51sEn8Bid0j5jE4gSfX6HDgIoPtdXvqtlkTKstFZx+gkEcxiKJWm2V16/9UHe8Bl8CgS+E0wCaP+M1XJEdRK1Aox+XGZaAmjPOX7AHMMQWw0I7Isy8qJdn8mgeHfJ29fgJVULRchmbnylmLF5QgcBa8BzGpRipybmMxMMKik2qiIzRZruxApkbnyXut8R4fff1aNwAQ+hSicN0eVRlNOx0rpk3KkSaBhTp5NZTR6LaBS6khtNSWaVSFTMPvt946832j9cJRBPddbyIBjRfvBVG0RFFwl8SpjQ8lMuuWr1/6ASuIHvowlGBFA3eT/E3wDoFtUGT9kcDQAAAAASUVORK5CYII="/></a>
 
-            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAlUlEQVRIS2NkoDFgpLH5DHS1wIGBgWE+AwODAoW+esDAwJDIwMBwAGQOsg9AEvIUGg7TDjJLEd2C/1QyHGYM2PHIPiDVAphekD5k9tCxgFCIUhxEZFtAad6AxSVOH4xaMBpEhFInwzAOog8MDAz8BAOAOAUPYfUKcqYCVTgLqFAngAxPwFbhEOc2ElVRWiwQtI7mFgAAwbElGSkYfAQAAAAASUVORK5CYII=" class="footer__icon__social"/>
+            <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABrElEQVRIS82VgS1EQRCGv6sAFaADHaADKkAFqAAVoAJUQAeoABXQASog32XmZb3b9/YiueQm2Vze7ez8//wzszthwTZZcHyWAmAHOAC2Ypn0a6w74GlMhbEMNoAbQIDvCJjBBPP/lQA4jf0ZrCEAAzzCVMIr4HyA5WHs/wD7tWxqAKvAe7DeG2JWAJrpA7AO7Pb9awA6m75LrQV0fYxonfsvAdK59gGURqeLkEV2fn8Bm42WVi5rplSSnFofQL2PgbUIegJchu8RcNsAkYjBBasCZJcoj1YC/GE2ACSB7TLbfgbqLEgyUCILLjOzapnddlYqUwOwsHZPWmYhO2UasyZAX6IMZnCn2V+HKodQva8jQ339tlHcHy2yHdNvy2wA5XJlkOw4AzaLnJqXh0pJLL4yWEjNKyTnJdvUYevup9qgDclUAknEZb0yG+flLQA73xqA94q6Wtx5TM0dMGXNbAYB7J77KORnHLAWZSHzsNeDQykRic4E13FokmvMlU4wJcnrWr/nmJvqXdUHUNMcNgP6rdayzPaTeT44tuW/H5x59G/6LMWb3GQ55vALoy1nGd0yKrcAAAAASUVORK5CYII="/></a>
+
+            <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABhElEQVRIS82VTS4FURCFv7cDZmbYgJ8FCFbADrACrABTE6wAK2Bk6mdkSEwlDCyAFZBP6sp1db++b9B5Kul0crtunTp1qqoH9GyDnuMzNoAVYANYiGcY0QfA5xy4KR2bGGwCp+F4C7xHgCYQE5gAluPjFnCWO5YAZn4NGHg9gtfINANcAvPAas6kBBDdwF4w8y6bAq6Ae+AQeIlSWYVvKwFeAR+ZlOal6TjUx5ovAXfAEzAXmesz2wbwCZwAO1l066wmvnNTWGuuBs/AWwCox0/iJQMBDoD9LJKBLJlnSUDZHIX4i5mvXTQSQOqoXeC4YCDgXrBIwCMDpCCTDaLLSlFzxv8PoPcSWXZFdoDsLFtT2w7RH4vuqipRU5sqoiC5GVyGJpCsE6Br0BRW0+/XzolzwZyL5Pdnkr20FpNYsypyRqmrLGPrqkjLTqpOqZnWmMEvQo+hy85g+boWaNi6TjsrvTvXdcrWCwL5TguujclH7CAnveqHU1OSap+x/ZOrM+xy/AJwqmkZGm7jHgAAAABJRU5ErkJggg=="/></a>
+
+            <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABl0lEQVRIS7WVgTEFUQxF768AFaACVIAKUAEqQAWoAB1QwacCVIAO6IAKmDOT7ORnsvvfmtnM7Ozum5d7k/uSvJkmttnE+GohOJR0IGnbHmJ6t+dF0sNQkEMEAN9I2liS5aekC0mP1b4+gitJlyPluzWiBbeK4D/gDnon6TwyZII9Sc+24UkSZCeSzmztw95b9kb/e9tzbGtHUa5MgJ7rtvHaCPhdlfSdJItrMWswNn1vJOBQ5wGE6Ii+xbKsp5bZQpmSqqcJ6L4kyrDFKOG3KriYAWC7QWucxlj0p092cI4EaLxiiK+SOPAxFgk67EjwG9AmIYgRkM3amPCtylyBL58AMYN8yLQ/3dliNBdjxa2rwL4y/bHzoPzoztwDDkQvUHk5kLJMcaJJSJMSJSovW7qannAigMmYquM7WidPriL+fVQARJk5SOxqB8uS+vpC/1TDzvUsp2MItRqKS4ed+zsJDUM2PtSiFJmgynLwRkMuZGD4Vc5OgOacTzlWWq5MiMiCbKIxSrjtypvMN7YQtPRB757JCf4AiSVWGfPUO+kAAAAASUVORK5CYII="/></a>
+        </div>
+
     </div>
 </footer>
 
