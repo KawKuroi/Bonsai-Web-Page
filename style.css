@@ -1,5 +1,5 @@
  
- /*GENERALIDADES DEL PROYECTO*/
+ /*=================================== GENERALIDADES DEL PROYECTO ==========================================================*/
 
 *{
     margin: 0;
@@ -7,6 +7,7 @@
     font-family: 'inter', sans-serif;
     font-size: 16px;   
     background-color: #fff;
+    box-sizing: border-box;
    
 }
 
@@ -19,7 +20,12 @@
 
 }
 
-/* INICIO DE MODELACIÓN DEL NAV DE LA PÁGINA WEB */
+/*============================ INICIO DE MODELACIÓN DEL NAV DE LA PÁGINA WEB ===============================================*/
+
+.icon__responsive,.nav__responsive{
+    position: absolute;
+    visibility: hidden;
+}
 
 header{
     width: 90%;
@@ -52,8 +58,8 @@ header{
  }
 
 .icono{
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: auto;
     border-radius: 50%;
     background-color: var(--Green01);
     padding: 5px;
@@ -72,7 +78,7 @@ header{
     transform:scale(1.05)
  }
 
- /* COMIENZO EN LA EDICIÓN DEL PRIMER ÁRTICULO DE LA PÁGINA */
+ /*============================ COMIENZO EN LA EDICIÓN DE LA SECCIÓN MAIN ==================================================*/
 
  .main__box{
     width: 90%;
@@ -124,7 +130,7 @@ header{
 
 .box__text > a{
     font-size: 26px;
-    margin: 0 44px;
+    margin: 0 4%;
     font-weight: 600;
     border-bottom: 1px solid #000000;
     color: var(--Green03);
@@ -138,29 +144,41 @@ header{
     transform:scale(1.05)
 }
 
-/* COMIENZO DE LA SEGUNDA SECCIÓN DE LA PÁGINA */
+/*======================== COMIENZO DE LA PRIMERA SECCIÓN O ARTICULO DE LA PÁGINA =================================================*/
 
 .article__box{
-    width: 67%;
-    height: 700px;
-    margin: 15px auto; 
-    display: flex;
-    justify-content: space-around;
-    
+    width: 75%;
+    height: auto;
+    margin: 15px auto;
+    display: grid;
+    grid-template-columns: minmax(375,1fr) minmax(350,1fr);
+    grid-template-rows: auto;   
+    justify-items: center;
+    align-items: center;    
 }
+
 .article__img{
+    min-width: 330px;
+    max-width: 450px;
     object-fit: contain;
     padding: 30px 0px;
+    align-self: center;
+    width:100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
 }
 
 .box__text__article{
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    display:flex ;
+    flex-direction: column; 
     align-items: center;
-    margin-left: 60px;
+    margin-left: 8%;
     padding: 0;
+    text-align: center;
+    min-width: 330px;
+    grid-column-start: 3;
+    grid-column-end: 5;
     
 }
 
@@ -179,7 +197,7 @@ header{
 .box__text__article > h3 {
     font-size: 19px;
     text-align: justify;
-    padding: 40px 0;
+    padding: 4% 0;
 }
 
 
@@ -194,6 +212,8 @@ header{
     text-align: center;
     padding: 0;
     color: var(--Green03);
+    border-radius: 20%;
+    padding: 5px;
 }
 
 .box__text__article > div > img{
@@ -206,7 +226,7 @@ header{
     border-bottom: 2px solid var(--Green-01);
 }
 
-/* COMIENZA LA TERCERA SECCIÓN DE LA PÁGINA */
+/*============================= COMIENZA LA TERCERA SECCIÓN DE LA PÁGINA ===================================================*/
 
 /* Configuración de propiedades de cajas */
 
@@ -222,14 +242,20 @@ header{
     grid-template-rows: repeat(2, auto);
     justify-content: space-around;
     gap: 50px 100px;
-    padding: 0 16% 50px;
+    padding: 0 12% 5%;
+    background-image: url(img/Background__Bonsai__02.jpg);
+    background-repeat: no-repeat;
+    background-position: 30% 40%;
+    background-size: cover;
+ 
 }
 
 .article__article__02 > .box__section > .box__list > .box__box__list{
     justify-self: center;
     background-color:var(--Green01);
-    display: flex;   
-
+    display: flex;
+    margin-top: 5%;
+    background: none;
 }
 
 /* Propiedades especificas dentro de los contenedores */
@@ -237,9 +263,9 @@ header{
 .article__article__02 > .box__section > .box__text__content {
     text-align: left ;
     color: var(--Green03);
-    padding: 50px 8% 20px ;
-    font-size: 53px;
-    width: 600px;
+    padding: 3% 8% ;
+    font-size: 60px;
+    width: 100%;
     font-weight: 800;
     text-shadow: 2px 2px 1px rgba(0,0,0,.25);
 }
@@ -255,9 +281,12 @@ header{
 
 .article__article__02 > .box__section > .box__list > .box__box__list > .box__box__list__text {
     text-align: left;
-    padding: 0 10px;
+    padding: 0 10px 3%;
     background: none;
     color: var(--Green03);
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 5px 5px 10px rgba(0,0,0,.55);
+    
 }
 
 .article__article__02 > .box__section > .box__list > .box__box__list > .box__box__list__text > h3 {
@@ -274,7 +303,7 @@ header{
     font-weight: 400;
 }
 
-/*INICIO DEL FOOTER*/
+/*====================================== INICIO DEL FOOTER =================================================================*/
 
 .footer__box{    
     background-color: var(--Green03);
@@ -318,7 +347,7 @@ header{
 }
 
 .footer__box__iconsocial > a {
-    background: none;
+    background:none;
 }
 
 .footer__box__iconsocial > a > img{
@@ -326,4 +355,294 @@ header{
     padding: 10px;
     margin: 0 10px;
     background-color: var(--Green01);
+}
+
+/* INTENTO DE CREAR LA PÁGINA RESPONSIVE DESIGN */
+
+@media screen and (max-width: 1725px){/* ====================================== 1725 ====================================== */
+
+    /* --------------------------------- Configuración main --------------------------------------------------------------- */
+
+    .maintext__box > .title, .maintext__box > .title > .text__color {
+        font-size: 47px;        
+    }
+
+    .box__text__content{
+        font-size: 27px;
+    }
+}
+
+@media screen and (max-width: 1300px){/* ====================================== 1300 ====================================== */
+
+    /* --------------------------------- Configuración nav --------------------------------------------------------------- */
+
+    .article__article__02 > .box__section > .box__text__content {
+        font-size: 47px;
+    }
+
+    .article__article__02 > .box__section > .box__list{
+        padding: 0 8% 5%;
+        gap: 30px 60px;
+    }
+}
+
+@media screen and (max-width: 1250px){/* ====================================== 1250 ====================================== */
+
+    /* --------------------------------- Configuración main -------------------------------------------------------------- */
+
+    .maintext__box > .title, .maintext__box > .title > .text__color {
+        font-size: 42px;        
+    }
+
+    .box__text__content,.box__text > a {
+        font-size: 25px;
+    }
+
+}
+
+@media screen and (max-width: 1100px){/* ====================================== 1100 ======================================= */
+
+    /* ---------------------------------- Configuración nav -------------------------------------------------------------- */
+
+    .nav > div > h1{
+        font-size: 50px;
+     }
+
+    .nav > a {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 960px){ /* ====================================== 960 ======================================= */
+
+    /* ----------------------------- Configuración articulo no1 -------------------------------------------------------- */
+
+    .article__img{
+        grid-column: 1/3;
+        grid-row: 1/3;   
+    }
+    
+    .box__text__article{
+        grid-column: 1/3;
+        grid-row: 3/5;
+        margin: 10px 3%;         
+    }
+
+    /* ----------------------------------- Configuración main ---------------------------------------------------------- */
+
+    .maintext__box > .title, .maintext__box > .title > .text__color {
+        font-size: 38px;        
+    }
+
+    .box__text__content, .box__text > a{
+        font-size: 20px;
+    }
+
+    /* ----------------------------------- Configuración nav ------------------------------------------------------------- */
+
+    .nav > a {
+        padding: 0 8px;
+    }
+
+    /* ------------------------------ Configuración articulo no2 ---------------------------------------------------------- */
+
+    .article__article__02 > .box__section > .box__text__content {
+        font-size: 40px;
+    }
+
+    .article__article__02 > .box__section > .box__list{
+        padding: 0 6% 5%;
+        gap: 30px 60px;
+    }
+
+    /* --------------------------------- Configuración footer ---------------------------------------------------------- */
+    
+    .footer__box__iconsocial > a > img{
+        padding: 5px;
+        margin: 0 5px;
+    }
+
+    .footer__box > .footer__box__copy > .text__footer__copy{
+        font-size: 12px;
+    }
+
+    .footer__box > .footer__box__icon > .text__footer{
+        font-size: 25px;
+    }
+
+    .footer__box > .footer__box__icon > a >.icono{
+        width: 50px ;
+    }
+}
+
+@media screen and (max-width: 705px){/* ====================================== 705 ======================================= */
+    
+/* ----------------------------------- Configuración nav ------------------------------------------------------------- */
+        
+    .nav{
+        width: 100%;  
+        display: flex;
+        justify-content: space-around;
+        align-items: center; 
+        
+    }
+
+    .nav, .header{
+        display: none;
+        visibility: hidden;           
+    }
+
+    .icon__responsive{
+        position: relative;
+        visibility: show;
+        visibility: visible;
+        display: flex;
+        color: var(--Black);
+        background-color: var(--Green02);
+        width: 100vw;
+        justify-content: center;
+    }
+
+    .icon__responsive > h1 {
+        color: var(--Green01);
+        background: none;
+        align-self: center;
+        font-size: 45px;
+    }
+
+    .icon__responsive > .icono {
+        width: 60px;
+        margin: 15px 10px 15px 0;
+    }
+
+    .nav__responsive{
+        position: relative;
+        visibility: show;
+        visibility: visible;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .nav__responsive > a {
+        font-size: 25px;
+        padding: 10px 0;
+    }
+
+  /* ----------------------------------- Configuración main ---------------------------------------------------------- */
+
+    .main__box{
+        height: auto;
+        background-position: 100% 40%;
+        
+    }   
+
+    .box__text{
+        margin: 0;
+        background: none;
+        box-shadow: none;
+        width: 90%;
+    }
+
+    .maintext__box{
+        margin: auto;
+    }
+
+    .maintext__box > .title{
+        padding: 7% 5% 7% 1%;
+        font-size: 28;
+        
+    }
+
+    .maintext__box > .title > .text__color{
+        font-size: 28;
+        color: var(--Green01);
+        
+    }
+
+    .main > .main__box > .maintext__box > .box__text__content {
+        padding: 2% 3%;
+        margin: 0 auto 3%;
+        font-size: 16px;
+        background-color: var(--Green01);    
+    }
+
+    .maintext__box > a{
+        font-size: 16px;
+        color: var(--Green02);
+    }
+
+    /* ------------------------------ Configuración articulo no1 ---------------------------------------------------------- */
+
+    .article__img{
+        max-width: 300px;
+        height: auto;   
+    }
+    
+    .box__text__article > h3 {    
+        font-size: 16px;
+    }
+
+    .box__text__article > div > a {    
+        font-size: 16px;
+    }
+    .box__text__article > div > a:hover {
+        color: var(--Green01);
+        border-bottom: 2px solid var(--Green-01);
+    }
+    /* ------------------------------ Configuración articulo no2 ---------------------------------------------------------- */
+
+    .article__article__02 > .box__section > .box__text__content {
+        font-size: 40px;
+        width: 90%;
+    }    
+
+    .article__article__02 > .box__section > .box__list{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, auto);
+        padding: 0 3% 5%;
+        gap: 15px 0;
+    }
+
+    /* --------------------------------- Configuración footer ---------------------------------------------------------- */
+    
+    .footer__box__iconsocial{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: repeat(2, maxcontent);
+        margin: 3% 0;
+    }
+
+}
+
+@media screen and (max-width: 450px){/* ====================================== 450 ======================================= */
+
+    /* --------------------------------- Configuración nav --------------------------------------------------------------- */
+
+    .article__box{
+        width: 100%;
+    }
+
+    .nav__responsive > a {
+        font-size: 16px;
+        padding: 10px 0;
+    }
+
+
+    /* --------------------------------- Configuración footer ---------------------------------------------------------- */
+    .footer__box__iconsocial > a > img{
+        padding: 3px;
+        margin: 0 3px;
+    }
+
+    .footer__box > .footer__box__copy > .text__footer__copy{
+        font-size: 7px;
+    }
+
+    .footer__box > .footer__box__icon > .text__footer{
+        font-size: 20px;
+    }
+
+    .footer__box > .footer__box__icon > a >.icono{
+        width: 40px ;
+    }
 }
